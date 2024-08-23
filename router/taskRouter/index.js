@@ -8,7 +8,7 @@ const {
   updateListTask,
 } = require("../../controller/tasks");
 
-var userRouter = {
+var taskRouter = {
     run(req, res) {
         routerMethods.get(req, res, routes.tasks.value, getListTask);
         routerMethods.post(req, res, routes.tasks.value, createListTask);
@@ -17,4 +17,4 @@ var userRouter = {
     },
 }
 
-module.exports = userRouter
+module.exports = taskRouter
